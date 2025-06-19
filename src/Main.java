@@ -3,15 +3,6 @@ import interfaces.Worker;
 
 public class Main {
     public static void main(String[] args) {
-//        Dipendente a = new Dipendente(Dipartimenti.PRODUZIONE);
-//        Dipendente b = new Dipendente(Dipartimenti.AMMINISTRAZIONE);
-//        Dipendente c = new Dipendente(Dipartimenti.VENDITE);
-//
-//        Dipendente[] team = {a, b, c};
-//        for (int i = 0; i < team.length; i++) {
-//            System.out.println(team[i].getMatricola());
-//        }
-
         DipendenteFullTime a = new DipendenteFullTime(Dipartimenti.VENDITE);
         DipendentePartTime b = new DipendentePartTime(Dipartimenti.PRODUZIONE);
         Dirigente c = new Dirigente(Dipartimenti.AMMINISTRAZIONE);
@@ -30,7 +21,7 @@ public class Main {
             System.out.println(dipendente.getStipendio());
         }
 
-        Volontario v = new Volontario("peppino", 20, "non s come si fa un cv");
+        Volontario v = new Volontario("peppino", 20, "non so come si fa un cv");
 
         Worker[] chiLavoraOggi = {a, v, b, c};
 

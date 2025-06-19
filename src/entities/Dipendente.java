@@ -13,6 +13,7 @@ public abstract class Dipendente implements Worker {
         Random random = new Random();
         this.matricola = random.nextInt(100, 100000);
         this.dipartimento = d;
+        this.stipendio = 0.00;
     }
 
     public int getMatricola() {
